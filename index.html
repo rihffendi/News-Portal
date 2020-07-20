@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>News Portal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+<div class="container-fluid bg-gradient">
+	<div class="container p-0">
+		<div class="row">
+			<div class="col-4">
+				<div class="social">
+					<ul>
+						<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					
+					</ul>
+				</div>
+			</div>
+			<div class="col-8 pl-0 w-100">
+				 <div class="form-group has-search">
+				    <span class="fa fa-search form-control-feedback"></span>
+				    <input type="text" class="form-control" id="search" placeholder="Search">
+				  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid p-0">
+	<div class="row m-0">
+		<div class="col-4 onp my-auto">
+			<h1 class="text-dark m-0">ONP</h1>
+			<p class="m-0">Online News Portal</p>
+		</div>
+		<div class="col-8 pr-0">
+			<img src="img/2.png" alt="" class="img">
+		</div>
+	</div>
+</div>
+<div class="container-fluid bg-gradient">
+	<div class="container p-0">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarNav">
+		    	<ul class="navbar-nav mr-auto">
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="home" >home</a>
+				  </li>
+				  <li class="nav-item dmenu dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						world <i class="font-icon fas fa-angle-down"></i>
+						</a>
+						<div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">africa</a>
+							<a class="dropdown-item" href="#">americas</a>
+							<a class="dropdown-item" href="#">australia</a>
+							<a class="dropdown-item" href="#">asia pacific</a>
+							<a class="dropdown-item" href="#">europe</a>
+						</div>
+				  </li>
+				  <li class="nav-item dmenu dropdown">
+						<a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						politics <i class="font-icon fas fa-angle-down"></i>
+						</a>
+						<div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Election 2020</a>
+							<a class="dropdown-item" href="#">Democratice Polls</a>
+							<a class="dropdown-item" href="#">Mobile Application</a>
+							<a class="dropdown-item" href="#">Presidential Candidates</a>
+							<a class="dropdown-item" href="#">Democratic Debates</a>
+						</div>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="science">science</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="health">health</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="arts">arts</a>
+				  </li>
+				   <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="business">business</a>
+				  </li>
+				   <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="opinion">opinion</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="tech">tech</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="sports">sports</a>
+				  </li>
+				   <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="travel">travel</a>
+				  </li>
+				   <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="magazine">magazine</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="food">food</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="jobs">jobs</a>
+				  </li>
+				   <li class="nav-item">
+				    <a class="nav-link text-white" href="#" id="multimedia">multimedia</a>
+				  </li>
+		    	</ul>
+		  	</div>
+		</nav>
+	</div>
+</div>
+
+<div class="container">
+	<div id="news" class="row pt-5">
+	</div>
+	<div id="loader">
+		<h3 class="text-center mt-5">loading...</h3>
+	 	<div class="progress">
+		    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:100%">
+		    	
+		    </div>
+		</div>
+	</div>
+</div>
+<div id="footer" class="container-fluid bg-dark">
+	<div class="footer text-center">
+		<p class="text-white">Made by <a href="https://rihffendi.com" target="_blank">rihffendi</a></p>
+	</div>
+</div>
+	
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/app.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
